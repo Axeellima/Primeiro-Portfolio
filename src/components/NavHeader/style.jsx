@@ -102,6 +102,7 @@ export const NavHeaderStyle = styled.div`
         gap: 5px;
         justify-content: center;
         p {
+          color: var(--grey1);
         }
         img {
           width: 40px;
