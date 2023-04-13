@@ -18,7 +18,7 @@ const ContainerDashboard = ({ language }) => {
             </h1>
           ) : (
             <h1 className='profile-text'>
-              Meu nome é Axel, Eu sou desenvovledor web!
+              Meu nome é Axel, Eu sou desenvolvedor web!
             </h1>
           )
         ) : language === 'en' ? (
