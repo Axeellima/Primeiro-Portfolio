@@ -1,13 +1,17 @@
-import { HeaderStyles } from "./style";
-import NavHeader from "../NavHeader";
+import { HeaderStyles } from './style'
+import NavHeader from '../NavHeader'
 
-const HeaderDashboard = ({ goToBot }) => {
+const HeaderDashboard = ({ goToBot, language, setLanguage }) => {
   return (
     <>
       <HeaderStyles>
-        <NavHeader goToBot={goToBot} />
+        <NavHeader
+          goToBot={goToBot}
+          language={language}
+          setLanguage={setLanguage}
+        />
       </HeaderStyles>
     </>
-  );
-};
-export default HeaderDashboard;
+  )
+}
+export default HeaderDashboard

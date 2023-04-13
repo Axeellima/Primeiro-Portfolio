@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled'
 
 export const MainContainer = styled.main`
   display: flex;
@@ -7,6 +7,7 @@ export const MainContainer = styled.main`
   background-color: #205275;
   width: 100%;
   height: 30vh;
+
   .div-picture {
     display: flex;
     flex-direction: column;
@@ -21,11 +22,13 @@ export const MainContainer = styled.main`
   .profile-text {
     width: 60%;
     margin-top: 8px;
-    color: #e5e4e2;
+    color: var(--grey3);
     font-size: 22px;
+    font-weight: 300;
   }
   .profile-text span {
-    color: #a9a9a9;
+    color: var(--blue3);
+    font-weight: bold;
   }
   @media (min-width: 900px) {
     .div-picture {
@@ -35,4 +38,4 @@ export const MainContainer = styled.main`
       width: 110px;
     }
   }
-`;
+`

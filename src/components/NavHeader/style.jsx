@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const NavHeaderStyle = styled.div`
   width: 100%;
@@ -6,12 +6,29 @@ export const NavHeaderStyle = styled.div`
   top: 0;
   transition: all 0.3s ease-in-out;
   background-color: ${(props) => props.backgroundHeader};
+  opacity: ${(props) => (props.backgroundHeader === 'black' ? 0.85 : 1)};
   height: 95px;
   display: flex;
+  z-index: 2;
   padding-top: 20px;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
+  .language {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    p {
+      font-size: 16px;
+
+      color: var(--white);
+    }
+    img {
+      width: 40px;
+    }
+  }
   .nav-bar {
     height: 21px;
     display: flex;
@@ -20,12 +37,14 @@ export const NavHeaderStyle = styled.div`
   }
   .nav-items {
     width: auto;
+    font-size: 18px;
+    text-decoration: none;
     font-weight: 400;
     color: var(--white);
   }
   .nav-items:hover {
     background-color: var(--white);
-    color: var(--grey-1);
+    color: var(--grey1);
     cursor: pointer;
     user-select: none;
   }
@@ -48,4 +67,52 @@ export const NavHeaderStyle = styled.div`
       margin-right: 30px;
     }
   }
-`;
+  @media (max-width: 700px) {
+    height: 50px;
+    justify-content: flex-start;
+    padding-top: 0px;
+    padding: 5px 0 0 5px;
+    align-items: baseline;
+    svg {
+      color: var(--white);
+      width: 40px;
+      height: 40px;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      height: 200px;
+
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      padding: 12px 16px;
+      z-index: 1;
+      h2,
+      a {
+        font-size: 20px;
+        text-decoration: none;
+        color: var(--grey1);
+        width: 100%;
+      }
+      .language {
+        display: flex;
+        margin-top: 10px;
+        align-items: center;
+        gap: 5px;
+        justify-content: center;
+        p {
+        }
+        img {
+          width: 40px;
+        }
+      }
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+`

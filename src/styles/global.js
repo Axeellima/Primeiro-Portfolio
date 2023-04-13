@@ -1,15 +1,15 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components'
 
 export default createGlobalStyle`
   :root {
-    --color-primary: #2E617B;
-    --grey-0: #2D2D2D;
-    --grey-1: #5b5b5b;
-    --grey-2: #D9D9D9;
+    --blue1: #205275;
+    --blue2: #1a2a44;
+    --blue3: #0c1f3d;
+    --grey0: #2D2D2D;
+    --grey1: #5b5b5b;
+    --grey2: #D9D9D9;
+    --grey3: #e5e4e2;
     --white: #FFF6F9;
-    --color-hover: #204A5F;
-    --sucess: #3FE864;
-    --fail: #E83F5B;
 
     --font: 'Sofia Sans', sans-serif;
   }
@@ -19,11 +19,11 @@ export default createGlobalStyle`
     padding: 0;
     outline:0;
     box-sizing: border-box;
+    font-weight: 300;
+    scroll-behavior: smooth;
   }
   
-  body,html {
-    width: 100vw;
-    height: 100vh;
+  body,html,div {
     font-family: var(--font);
   }
 
@@ -31,4 +31,4 @@ export default createGlobalStyle`
     cursor: pointer;
   }
 
-`;
+`
