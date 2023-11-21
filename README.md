@@ -29,6 +29,6 @@ Você pode me encontrar nas seguintes plataformas:
 
 ## Contribuições 🙌
 
-Sinta-sehttps://github.com/Axeellima à vontade para explorar, fazer um fork e fornecer feedback. Contribuições são sempre bem-vindas!
+Sinta-se à vontade para explorar, fazer um fork e fornecer feedback. Contribuições são sempre bem-vindas!
 
 **Vamos construir algo incrível juntos!** 🚀😊
